@@ -12,6 +12,10 @@ if not LPH_OBFUSCATED then
     LPH_CRASH = function() return print(debug.traceback()) end
 end
 
+local _Network = getrenv()._G.modules.Network;
+local _Player = getrenv()._G.modules.Player;
+local _Character = getrenv()._G.modules.Character;
+local _Camera = getrenv()._G.modules.Camera;
 
 
 local vitalfov = Drawing.new("Circle")
